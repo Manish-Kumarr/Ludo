@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ludo Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" id="close">&times;</span>
+        <p>
+          Rule : Players who will score 100 they will win. And if your number
+          will be 1 then you loss your 10 score.
+        </p>
+      </div>
+    </div>
+
+    <h1 id="test"></h1>
+    <div class="inline player">
+      <p>Player 1</p>
+      <div class="player1">
+        <p class="inline">Score :</p>
+        <span id="change-score1" class="change-score">0</span>
+        <img src="./assets/dice1.png" id="player1" class="block" alt="" height="150" width="150" />
+        <button id="btn1" onclick="player1()">Play</button>
+      </div>
+    </div>
+    <div class="inline player">
+      <p>Player 2</p>
+      <div class="player2">
+        <p class="inline">Score :</p>
+        <span class="change-score" id="change-score2">0</span>
+        <img src="./assets/dice1.png" class="block" alt="" height="150" width="150" id="player2" />
+        <button id="btn2" onclick="player2()">Play</button>
+      </div>
+    </div>
+
+    <h1 id="won"></h1>
+  </div>
+  <div class="center"><button class="reset" onclick="reset()">Reset</button></div>
+
+  <div class="footer">
+    <div class="footer-align">
+      <p>
+        &copy; Developed by
+        <a href="https://singh-manish.tech">Singh Manish</a>
+      </p>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
